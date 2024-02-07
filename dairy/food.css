@@ -1,0 +1,691 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: vijay;
+    src: url(assets/fonts/Bestie.otf);
+}
+@font-face {
+    font-family: sameer;
+    src: url(assets/fonts/Handmade.otf);
+}
+body{
+    background-color: #000000;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+   z-index: 1;
+    
+    
+}
+.logo{
+    background-image: url(assets/images/REDDY_GARI_BIRYANI.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 145px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+.menu ul li {
+    display: inline-block;
+    align-items: center;
+    margin: 0px 30px 0px 30px;
+}
+.menu ul li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: vijay;
+    letter-spacing: 0.1rem;
+}
+.menu ul li a:hover{
+    color: orange;
+}
+.menu ul li a button{
+    padding: 10px 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: vijay;
+    letter-spacing: 0.1rem;
+    background-color: #00000000;
+    border-radius: 20px;
+}
+.menu ul li a button:hover{
+    background-image: linear-gradient(#ffa500,#ff4d00b3);
+    transition: 50s ease-in-out;
+}
+.prebanner{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    position:absolute;
+    top: 0px;
+    opacity: 0.8;
+   
+}
+.banner{
+    width: 100%;
+    height: 610px;
+    background-image: url(assets/images/bgimg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -80px;
+}
+.container{
+    width: 700px;
+    height: 300px;
+    padding: 50px 0px;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+}
+.container h3{
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffffff;
+    
+}
+.container h1{
+    font-size:60px;
+    line-height: 80px;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    background: url(assets/images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: sameer 20s linear infinite;
+}
+@keyframes sameer{
+    100%{
+        background-position: 2000px 300px;
+    }
+}
+.container h2{
+    text-align: left;
+    font-size: 22px;
+    font-weight: 200;
+    color: #e59500;
+    margin-bottom: 10px;
+}
+.container p{
+    color: #ffffffd4;
+    
+}
+
+
+.container a button{
+    padding: 10px 15px;
+    color: white;
+    font-size: 20px;
+   
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    background-color: #00000000;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+.container a button:hover{
+    background-image: linear-gradient(#ffa500,#ff4d00b3);
+    transition: 50s ease-in-out;
+}
+.about{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+
+}
+.image{
+    width: 45%;
+    height: 430px;
+    background-image: url(assets/images/chef_PNG191.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-left: 50px;
+    
+}
+.text{
+    width: 50%;
+    height: 480px;
+
+}
+.text h1{
+    margin:100px 0px 0px 50px ;
+    font-family: vijay;
+    font-size: 30px;
+    font-weight: 400px;
+    color: #ffffff;
+}
+.text h1 span{
+    color:#e59500 ;
+}
+.text hr{
+    width: 55px;
+    
+    margin: -20px 0px 0px 140px;
+}
+.text h2{
+    color: #ffffff;
+    margin: 30px 0px 0px 50px;
+    font-size: 31px;
+    font-weight: 300;
+    
+    
+}
+.text p{
+    color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.text a button{
+    padding: 10px 10px;
+    color: white;
+    font-size: 10px;
+   
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    background-color: #00000000;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.servicetext{
+    text-align: center;
+   
+
+}
+.servicetext h1{
+    font-family: vijay;
+    font-size: 40px;
+    font-weight: 400px;
+    color: #ffffff;
+    margin-top: 50px;
+}
+.servicetext h1 span{
+    color:#ffa704 ;
+}
+.servicetext h2{
+    text-align: center;
+    
+    font-size: 33px;
+    font-weight: 400px;
+    color: #ffffff;
+   margin-bottom: 40px; 
+}
+
+.service{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+.box{
+    width: 250px;
+    height: 280px;
+    padding: 20px 20px;
+    background-color: #ff8903;
+    border-radius: 2px 2px 2px 2px ;
+}
+.fa-utensils {
+    color:#ffffff ;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.box h3{
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    
+}
+.box p{
+    color: #ffffff9e;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size:18px;
+}
+.box:hover{
+    color:  #ff8903;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 1s ease;
+    font-weight: 200;
+    box-shadow: 3px 3px 3px 3px #3836366f;
+    border-radius: 2px 2px 2px 2px ;
+}
+.box1{
+    width: 250px;
+    height: 280px;
+    box-shadow: 10px 10px 10px rgba(62, 62, 61, 0.248);
+    margin-left: 100px;
+    padding: 20px 20px;
+    background-color: #ff8903;
+    border-radius: 2px 2px 2px 2px ;
+}
+.fa-user {
+    color:#ffffff ;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.box1 h3{
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.box1 p{
+    color: #ffffff9e;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size:18px;
+}
+.box1:hover{
+    color:  #ffffff;
+    background-color: #FBAB7E;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 1s ease;
+    font-weight: 200;
+    box-shadow: 3px 3px 3px 3px #3836366f;
+    border-radius: 2px 2px 2px 2px ;
+}
+.box2{
+    width: 250px;
+    height: 280px;
+    box-shadow: 10px 10px 10px rgba(62, 62, 61, 0.248);
+    margin-left: 100px;
+    padding: 20px 20px;
+    background-color: #ff8903;
+    border-radius: 2px 2px 2px 2px ;
+}
+.fa-headphones-simple {
+    color:#ffffff ;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.box2 h3{
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.box2 p{
+    color: #ffffff9e;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size:18px;
+}
+.box2:hover{
+    color:  #ff8903;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 1s ease;
+    font-weight: 200;
+    box-shadow: 3px 3px 3px 3px #3836366f;
+    border-radius: 2px 2px 2px 2px ;
+}
+.foodmenutext{
+    text-align: center;
+   
+
+}
+.foodmenutext h1{
+    font-family: vijay;
+    font-size: 40px;
+    font-weight: 400px;
+    color: #ffffff;
+    margin-top: 50px;
+}
+.foodmenutext h1 span{
+    color:#ffa704 ;
+}
+.foodmenutext h2{
+    text-align: center;
+    
+    font-size: 33px;
+    font-weight: 400px;
+    color: #ffffff;
+   margin-bottom: 50px; 
+}
+.foodmenu{
+    width: 100%;
+    height:600px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    justify-content: center;
+}
+.item{
+    width: 500px;
+    height: 100px;
+    padding: 10px 10px;
+    background-color: rgb(0, 0, 0);
+    
+}
+.foodimage1{
+    width: 100px;
+    height: 100px;
+    background-image: url(assets/images/13480.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -10px;
+}
+.item h1{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: -90px;
+    margin-left: 120px;
+}
+.item h3{
+    color: #ffc108;
+    font-size: 20px;
+    margin-top: -24px;
+    margin-left: 430px;
+}
+.line hr{
+    width: 370px;
+    margin-left: 120px;
+    margin-top: 10px;
+    color: white;
+}
+.item p{
+    margin-left: 120px;
+    font-size: 17px;
+    color: rgb(199, 195, 195);
+    margin-top: 6px;
+}
+.item1{
+    width: 500px;
+    height: 100px;
+    padding: 10px 10px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 50px;
+}
+.foodimage2{
+    width: 100px;
+    height: 100px;
+    background-image: url(assets/images/mutton.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -10px;
+}
+.item1 h1{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: -90px;
+    margin-left: 120px;
+}
+.item1 h3{
+    color: #ffc108;
+    font-size: 20px;
+    margin-top: -24px;
+    margin-left: 430px;
+}
+.line hr{
+    width: 370px;
+    margin-left: 120px;
+    margin-top: 10px;
+    color: white;
+}
+.item1 p{
+    margin-left: 120px;
+    font-size: 17px;
+    color: rgb(199, 195, 195);
+}
+.item2{
+    width: 500px;
+    height: 100px;
+    padding: 10px 10px;
+    background-color: rgb(0, 0, 0);
+    
+    margin-top: -100px;
+}
+.foodimage3{
+    width: 100px;
+    height: 100px;
+    background-image: url(assets/images/prawns\ biryani.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -10px;
+}
+.item2 h1{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: -90px;
+    margin-left: 120px;
+}
+.item2 h3{
+    color: #ffc108;
+    font-size: 20px;
+    margin-top: -24px;
+    margin-left: 430px;
+}
+.line hr{
+    width: 370px;
+    margin-left: 120px;
+    margin-top: 10px;
+    color: white;
+}
+.item2 p{
+    margin-left: 120px;
+    font-size: 17px;
+    color: rgb(199, 195, 195);
+    margin-top: 6px;
+}
+.item3{
+    width: 500px;
+    height: 100px;
+    padding: 10px 10px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 50px;
+    margin-top: -100px;
+}
+.foodimage4{
+    width: 100px;
+    height: 100px;
+    background-image: url(assets/images/friedrice.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -10px;
+}
+.item3 h1{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: -90px;
+    margin-left: 120px;
+}
+.item3 h3{
+    color: #ffc108;
+    font-size: 20px;
+    margin-top: -24px;
+    margin-left: 430px;
+}
+.line hr{
+    width: 370px;
+    margin-left: 120px;
+    margin-top: 10px;
+    color: white;
+}
+.item3 p{
+    margin-left: 120px;
+    font-size: 17px;
+    color: rgb(199, 195, 195);
+}
+.item4{
+    width: 500px;
+    height: 100px;
+    padding: 10px 10px;
+    background-color: rgb(0, 0, 0);
+    
+    margin-top: -100px;
+}
+.foodimage5{
+    width: 100px;
+    height: 100px;
+    background-image: url(assets/images/noodles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -10px;
+}
+.item4 h1{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: -90px;
+    margin-left: 120px;
+}
+.item4 h3{
+    color: #ffc108;
+    font-size: 20px;
+    margin-top: -24px;
+    margin-left: 430px;
+}
+.line hr{
+    width: 370px;
+    margin-left: 120px;
+    margin-top: 10px;
+    color: white;
+}
+.item4 p{
+    margin-left: 120px;
+    font-size: 17px;
+    color: rgb(199, 195, 195);
+    margin-top: 6px;
+}
+.item5{
+    width: 500px;
+    height: 100px;
+    padding: 10px 10px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 50px;
+    margin-top: -100px;
+}
+.foodimage6{
+    width: 100px;
+    height: 100px;
+    background-image: url(assets/images/fish.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -10px;
+}
+.item5 h1{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: -90px;
+    margin-left: 120px;
+}
+.item5 h3{
+    color: #ffc108;
+    font-size: 20px;
+    margin-top: -24px;
+    margin-left: 430px;
+}
+.line hr{
+    width: 370px;
+    margin-left: 120px;
+    margin-top: 10px;
+    color: white;
+}
+.item5 p{
+    margin-left: 120px;
+    font-size: 17px;
+    color: rgb(199, 195, 195);
+}
+
+.container111{
+    max-width: 1170px;
+    
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #131212;
+    padding: 70px 50px;
+}
+.col{
+    width: 25%;
+    padding: 0 15px;
+}
+.col h4{
+    font-size: 36px;
+    color: #e59500;
+    font-family: vijay;
+    margin-bottom: 30px;
+    font-weight: 500;
+
+
+}
+.col ul li a{
+    font-size: 26px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    transition: all 0.3s ease;
+    display: block;
+}
+.col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+.social a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0px 10px 10px 0px ;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+.col ul li{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #ffffffba;
+    text-decoration: none;
+    font-weight: 300;
+    
+    
+    display: block;
+}
+
